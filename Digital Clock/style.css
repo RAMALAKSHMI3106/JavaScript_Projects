@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.dig {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 400px;
+    background-image: url("https://thumbs.dreamstime.com/b/futuristic-digital-clock-design-vibrant-neon-colors-technology-background-visually-striking-representation-integrated-374052064.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 30px 10px;
+}
+
+.time {
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 1px solid rgb(97, 96, 96);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 12rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.time p,
+.colon p {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+.colon {
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.period {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .dig {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .dig h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .clock {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .time {
+        width: 90%;
+        max-width: 250px;
+        font-size: 35px;
+        padding: 15px;
+    }
+
+    .colon {
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    .time p,
+    .colon p {
+        font-size: 14px;
+    }
+}

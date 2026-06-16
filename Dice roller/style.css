@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 15px gray;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(230, 51, 51);
+}
+
+#inp {
+    width: 80px;
+    height: 35px;
+    text-align: center;
+}
+
+#dice {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#diceImg {
+    margin-top: 20px;
+}
+
+#diceImg img {
+    width: 80px;
+    margin: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    #diceImg img {
+        width: 60px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
